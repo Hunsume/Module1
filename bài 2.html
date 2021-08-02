@@ -9,11 +9,13 @@
     let arrNumber = [8, 5, 6, 9, 2, 1, 7, 15];
 
     function searchIndex(number, arrNumber) {
+        let index = -1;
         for (let i = 0; i < arrNumber.length; i++) {
             if (arrNumber[i] === number) {
-                return index = i;
+                 index = i;
             }
         }
+        return index;
     }
 
     let number = +prompt("Nhập phần tử bạn muốn tìm: ");
