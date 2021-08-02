@@ -8,7 +8,7 @@
 <script>
     let arrNumber = [8, 5, 6, 9, 2, 1, 7, 15];
 
-    function searchIndex(number, arrNumber) {
+    function findIndex(number, arrNumber) {
         let index = -1;
         for (let i = 0; i < arrNumber.length; i++) {
             if (arrNumber[i] === number) {
@@ -19,7 +19,7 @@
     }
 
     let number = +prompt("Nhập phần tử bạn muốn tìm: ");
-    let result = searchIndex(number, arrNumber);
+    let result = findIndex(number, arrNumber);
     if (result !== -1) {
         document.write("Phần tử bạn tìm là: " + number + " Nằm ở vị trí: " + result);
     } else {
